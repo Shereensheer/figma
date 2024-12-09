@@ -1,8 +1,8 @@
 'use client'
 
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from '@radix-ui/react-dropdown-menu';
+import { DropdownMenu, DropdownMenuTrigger,  } from '@radix-ui/react-dropdown-menu';
 import { ChevronDownIcon } from 'lucide-react';
-import Image from 'next/image';
+
 import Link from 'next/link';
 import { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
