@@ -1,6 +1,6 @@
 'use client';
 
-import { Fullscreen } from "lucide-react";
+
 import Image from "next/image";
 import ReviewBox from "../reviews/page";
 
@@ -87,10 +87,12 @@ const DetailPage = () => {
           <div className="mt-8">
             <h2 className="text-2xl font-semibold text-gray-800">Select Colors</h2>
             <div className="mt-4">
-              <img
+              <Image
                 src="/Frame 77.png"
                 alt="Color Selection"
                 className="rounded-lg"
+                height={100}
+                width={200}
               />
             </div>
           </div>
@@ -99,20 +101,24 @@ const DetailPage = () => {
           <div className="mt-8">
             <h2 className="text-2xl font-semibold text-gray-800">Select Size</h2>
             <div className="mt-4">
-              <img
+              <Image
                 src="/Frame 16.png"
                 alt="Size Selection"
                 className="rounded-lg"
+                height={100}
+                width={200}
               />
             </div>
           </div>
 
           {/* Add to Cart Button */}
           <div className="flex items-center justify-between w-full mt-10 bg-white p-6 rounded-lg shadow">
-            <img
+            <Image
               src="/Frame 17.png"
               alt="Product Preview"
               className="rounded-lg object-cover"
+              height={100}
+              width={200}
             />
             <button className="bg-black text-white text-lg font-semibold py-2 px-6 w-96 h-14 hover:bg-gray-800 rounded-full">
               Add to Cart

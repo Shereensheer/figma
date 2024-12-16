@@ -1,6 +1,6 @@
 'use client';
 
-import Image from "next/image";
+
 
 const ReviewBox = () => {
   return ( 
@@ -33,7 +33,7 @@ const ReviewBox = () => {
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            I absolutely love this t-shirt The design is unique and the fabric feels so comfortable As a fellow designer I appreciate the attention to detail Its become my favorite go-to shirt
           </p>
           {/* Posted on Date */}
           <p className="mt-2 text-gray-500 text-sm">Posted on August 14, 2023</p>
@@ -64,10 +64,10 @@ const ReviewBox = () => {
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+            The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself Im quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me
           </p>
           {/* Posted on Date */}
-          <p className="mt-2 text-gray-500 text-sm">Posted on August 15, 2023</p>
+          <p className="mt-2 text-gray-500 text-sm">Posted on August 15 2023</p>
         </div>
 
         {/* Box 3 */}
@@ -90,15 +90,15 @@ const ReviewBox = () => {
           </div>
           {/* Name with Green Tick */}
           <div className="flex items-center">
-            <span className="text-gray-700 font-semibold">Ethan R.</span>
+            <span className="text-gray-700 font-semibold">Ethan R</span>
             <span className="text-green-500 text-xl ml-2">✔️</span>
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+            This t-shirt is a must-have for anyone who appreciates good design The minimalistic yet stylish pattern caught my eye and the fit is perfect I can see the designers touch in every aspect of this shirt
           </p>
           {/* Posted on Date */}
-          <p className="mt-2 text-gray-500 text-sm">Posted on August 16, 2023</p>
+          <p className="mt-2 text-gray-500 text-sm">Posted on August 16 2023</p>
         </div>
 
         {/* Box 4 */}
@@ -126,10 +126,10 @@ const ReviewBox = () => {
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+            As a UI/UX enthusiast I value simplicity and functionality This t-shirt not only represents those principles but also feels great to wear Its evident that the designer poured their creativity into making this t-shirt stand out
           </p>
           {/* Posted on Date */}
-          <p className="mt-2 text-gray-500 text-sm">Posted on August 17, 2023</p>
+          <p className="mt-2 text-gray-500 text-sm">Posted on August 17 2023</p>
         </div>
 
         {/* Box 5 */}
@@ -157,10 +157,10 @@ const ReviewBox = () => {
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+            This t-shirt is a fusion of comfort and creativity The fabric is soft and the design speaks volumes about the designers skill Its like wearing a piece of art that reflects my passion for both design and fashion
           </p>
           {/* Posted on Date */}
-          <p className="mt-2 text-gray-500 text-sm">Posted on August 18, 2023</p>
+          <p className="mt-2 text-gray-500 text-sm">Posted on August 18 2023</p>
         </div>
 
         {/* Box 6 */}
@@ -188,10 +188,10 @@ const ReviewBox = () => {
           </div>
           {/* Review Paragraph */}
           <p className="mt-4 text-gray-600">
-            "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+            I am not just wearing a t-shirt I am wearing a piece of design philosophy The intricate details and thoughtful layout of the design make this shirt a conversation starter
           </p>
           {/* Posted on Date */}
-          <p className="mt-2 text-gray-500 text-sm">Posted on August 19, 2023</p>
+          <p className="mt-2 text-gray-500 text-sm">Posted on August 19 2023</p>
         </div>
       </div>
 <br/><br/><br/>

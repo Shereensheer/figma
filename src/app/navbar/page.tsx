@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between py-4">
                     {/* Logo */}
-                    <h1 className="text-2xl font-bold text-black">SHOP.CO</h1>
+                    <h1 className="text-2xl font-bold text-black pr-10">SHOP.CO</h1>
 
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden">
@@ -54,7 +54,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center space-x-8">
-                        <Link href="/about" className="hover:text-gray-700">
+                        <Link href="/cart" className="hover:text-gray-700">
                             <DropdownMenu>
                                 <DropdownMenuTrigger className="flex items-center">
                                     Shop <ChevronDownIcon className="ml-1 w-5 h-5" />
@@ -77,7 +77,7 @@ const Navbar = () => {
                         <div className="relative">
                             <input
                                 type="text"
-                                className="w-full py-2 pl-10 pr-4 text-sm border rounded-lg focus:outline-none focus:ring focus:ring-orange-500"
+                                className="w-full py-2 pl-10 pr-4 text-sm border rounded-full focus:outline-none focus:ring focus:ring-black"
                                 placeholder="Search for Product"
                             />
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
