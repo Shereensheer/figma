@@ -5,7 +5,7 @@ import React from "react";
 const Topselling = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-center py-16">Top Selling</h1>
+      <h1 className="text-3xl font-extrabold text-center py-16">TOP SELLING</h1>
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

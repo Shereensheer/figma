@@ -7,7 +7,7 @@ const ClientReviews = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="container py-10 mx-auto">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 lg:text-3xl dark:text-white">
+          <h1 className="text-3xl font-extrabold text-center text-gray-800 lg:text-3xl dark:text-white">
             OUR HAPPY CUSTOMERS
           </h1>
           <FaArrowLeft className="text-gray-500 dark:text-white w-6 h-6 ml-auto" />

@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between py-4">
                     {/* Logo */}
-                    <h1 className="text-2xl font-bold text-black pr-10">SHOP.CO</h1>
+                    <h1 className="text-2xl font-extrabold text-black pr-10">SHOP.CO</h1>
 
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden">
@@ -54,6 +54,10 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center space-x-8">
+                    <Link href="/" className="hover:text-gray-700">
+                           Home
+                        </Link>
+
                         <Link href="/cart" className="hover:text-gray-700">
                             <DropdownMenu>
                                 <DropdownMenuTrigger className="flex items-center">
@@ -61,6 +65,7 @@ const Navbar = () => {
                                 </DropdownMenuTrigger>
                             </DropdownMenu>
                         </Link>
+
                         <Link href="/catagary" className="hover:text-gray-700">
                             OnSale
                         </Link>

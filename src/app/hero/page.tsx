@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
+import Link from 'next/link';
 function Hero() {
   return (
     <div>
@@ -17,10 +17,13 @@ function Hero() {
               designed to bring out your individuality and cater to your sense of style.
             </p>
             <div className="flex justify-center">
+              <Link href="/cart" className="hover:text-gray-700">
               <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded-3xl text-lg">
                 Shop Now
               </button>
+              </Link>
             </div>
+          
           </div>
 
           {/* Image Section */}
@@ -55,6 +58,7 @@ function Hero() {
           </div>
         </div>
       </section>
+      
     </div>
   );
 }

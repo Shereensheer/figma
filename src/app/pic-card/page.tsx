@@ -15,7 +15,7 @@ const Page = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center py-16">New Arrivals</h1>
+      <h1 className="text-3xl font-extrabold text-center py-16">NEW ARRIVALS</h1>
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -24,7 +24,7 @@ const Page = () => {
           <Image
             height={100}
             width={200}
-            src="/image 7.png"
+            src="/black.png"
             alt="Product 1"
             className="w-full h-64 object-cover"
           />
