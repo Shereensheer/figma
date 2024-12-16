@@ -34,7 +34,7 @@ const ClientReviews = () => {
               </div>
             </div>
             <p className="leading-loose text-gray-500 dark:text-gray-400">
-              Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.
+            Im blown away by the quality and style of the clothes I received from Shop co From casual wear to elegant dresses every piece Ive bought has exceeded my expectations
             </p>
           </div>
 
@@ -57,7 +57,7 @@ const ClientReviews = () => {
               </div>
             </div>
             <p className="leading-loose text-gray-500 dark:text-gray-400">
-              As someone who always on the lookout for unique fashion pieces Im thrilled to have stumbled upon Shop co The selection of clothes is not only diverse but also on-point with the latest trends.
+            Finding clothes that align with my personal style used to be a challenge until I discovered Shop co The range of options they offer is truly remarkable catering to a variety of tastes and occasions
             </p>
           </div>
 
@@ -80,9 +80,7 @@ const ClientReviews = () => {
               </div>
             </div>
             <p className="leading-loose text-gray-500 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-              tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-              aperiam dolorum, obcaecati corrupti aspernatur a.
+            As someone who s always on the lookout for unique fashion pieces I m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends
             </p>
           </div>
         </section>

@@ -24,7 +24,7 @@ function Hero() {
           </div>
 
           {/* Image Section */}
-          <div className="flex justify-center items-center w-full md:w-1/2">
+          <div className="relative flex justify-center items-center w-full md:w-1/2">
             <Image
               className="object-center rounded max-w-full h-auto"
               alt="hero"
@@ -33,6 +33,25 @@ function Hero() {
               width={500}
               priority
             />
+            {/* Decorative Images */}
+            <div className="absolute top-[100px] mr-96 mt-24  ">
+              <Image
+                src="/star.png"
+                alt="Star Decoration"
+                height={100}
+                width={50}
+                className="w-[-50px] h-[-50px]"
+              />
+            </div>
+            <div className="absolute top-[50px] right-[-50px] ml-2 mr-32">
+              <Image
+                src="/vstar.png"
+                alt="V Star Decoration"
+                height={200}
+                width={200}
+                className="w-[150px] h-auto top-44 "
+              />
+            </div>
           </div>
         </div>
       </section>

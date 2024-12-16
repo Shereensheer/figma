@@ -1,115 +1,136 @@
-'use client'
+'use client';
 
-import { DropdownMenu, DropdownMenuTrigger,  } from '@radix-ui/react-dropdown-menu';
+import { DropdownMenu, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import { ChevronDownIcon } from 'lucide-react';
-
 import Link from 'next/link';
 import { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
-import { FaShoppingCart, FaUserAlt } from 'react-icons/fa';  // Import icons
+import { FaShoppingCart, FaUserAlt } from 'react-icons/fa';
 import Topnav from '../topnav/page';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="">
-          <Topnav />
-            <div className="container px-6 py-3 mx-auto md:flex">
-                 
-                {/* Mobile menu button */}
-                <div className="flex lg:hidden bg-white">
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        type="button"
-                        className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                        aria-label="toggle menu"
-                    >
-                        {!isOpen ? (
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
-                            </svg>
-                        ) : (
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        )}
-                    </button>
-                </div>
-            </div>
-            
-            {/* Mobile Menu open: "block", Menu closed: "hidden" */}
-            <div
-                className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between ${
-                    isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
-                }`}
-            ><h1 className='inline-flex text-3xl pl-10 font-bold'>SHOP.CO</h1>
-                <div className="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0 text-black bg-white">
-                    
-                    <Link
-                        href="/about"
-                        className="px-2.5 py-2 transition-colors duration-300 transform rounded-lg text-black hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
-                    >
-                        <DropdownMenu>
-                            <DropdownMenuTrigger>
-                                About <ChevronDownIcon className="w-5 h-5 inline-flex" />
-                            </DropdownMenuTrigger>
-                        </DropdownMenu>
-                    </Link>
-                    <Link
-                        href="#"
-                        className="px-2.5 py-2 text-black transition-colors duration-300 transform rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
-                    >
-                        Shop
-                    </Link>
-                    <Link
-                        href="#"
-                        className="px-2.5 py-2 transition-colors duration-300 transform rounded-lg text-black hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
-                    >
-                        Contact
-                    </Link>
-                    <Link
-                        href="#"
-                        className="px-2.5 py-2 transition-colors duration-300 transform rounded-lg text-black hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
-                    >
-                        Contact
-                    </Link>
+        <nav className="bg-white shadow">
+            <Topnav />
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="flex items-center justify-between py-4">
+                    {/* Logo */}
+                    <h1 className="text-2xl font-bold text-black">SHOP.CO</h1>
+
+                    {/* Mobile Menu Button */}
+                    <div className="lg:hidden">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            type="button"
+                            className="text-gray-500 hover:text-gray-600 focus:outline-none"
+                        >
+                            {!isOpen ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
+
+                    {/* Desktop Menu */}
+                    <div className="hidden lg:flex items-center space-x-8">
+                        <Link href="/about" className="hover:text-gray-700">
+                            <DropdownMenu>
+                                <DropdownMenuTrigger className="flex items-center">
+                                    Shop <ChevronDownIcon className="ml-1 w-5 h-5" />
+                                </DropdownMenuTrigger>
+                            </DropdownMenu>
+                        </Link>
+                        <Link href="/catagary" className="hover:text-gray-700">
+                            OnSale
+                        </Link>
+                        <Link href="/pic-card" className="hover:text-gray-700">
+                            New Arrivals
+                        </Link>
+                        <Link href="detail" className="hover:text-gray-700">
+                            Brands
+                        </Link>
+                    </div>
+
+                    {/* Search Bar */}
+                    <div className="hidden md:block flex-grow mx-4 lg:mx-8">
+                        <div className="relative">
+                            <input
+                                type="text"
+                                className="w-full py-2 pl-10 pr-4 text-sm border rounded-lg focus:outline-none focus:ring focus:ring-orange-500"
+                                placeholder="Search for Product"
+                            />
+                            <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <CiSearch className="w-5 h-5 text-gray-500" />
+                            </span>
+                        </div>
+                    </div>
+
+                    {/* Icons */}
+                    <div className="flex items-center space-x-4">
+                        <Link href="#" className="text-gray-700 hover:text-gray-600">
+                            <FaShoppingCart className="w-5 h-5" />
+                        </Link>
+                        <Link href="#" className="text-gray-700 hover:text-gray-600">
+                            <FaUserAlt className="w-5 h-5" />
+                        </Link>
+                    </div>
                 </div>
 
-                <div className="relative mt-4 md:mt-0 mr-14">
-                    <input
-                        type="text"
-                        className=" rounded-3xl w-[577px] py-2 pl-10 pr-4 text-black bg-white border focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-orange-500"
-                        placeholder="Search for Product"
-                        style={{ height: '48px' }}
-                    />
-                    <span className="absolute inset-y-0 left-0 flex items-center pl-4">
-                        <CiSearch className='w-6 h-6 text-black' />
-                    </span>
-                </div>
+                {/* Mobile Menu */}
+                <div
+                    className={`lg:hidden transition-all duration-300 ease-in-out ${
+                        isOpen ? 'block' : 'hidden'
+                    }`}
+                >
+                    <div className="flex flex-col space-y-2 text-black bg-white px-4 py-2">
+                        <Link href="/cart" className="hover:bg-gray-100 py-2 rounded">
+                            Shop
+                        </Link>
+                        <Link href="/catagary" className="hover:bg-gray-100 py-2 rounded">
+                            OnSale
+                        </Link>
+                        <Link href="/pic-card" className="hover:bg-gray-100 py-2 rounded">
+                            New Arrivals
+                        </Link>
+                        <Link href="detail" className="hover:bg-gray-100 py-2 rounded">
+                            Brands
+                        </Link>
 
-                {/* Icons on the right */}
-                <div className="flex items-center space-x-6">
-                    <Link href="#" className="text-black hover:text-gray-600">
-                        <FaShoppingCart className="w-6 h-6" />
-                    </Link>
-                    <Link href="#" className="text-black hover:text-gray-600">
-                        <FaUserAlt className="w-6 h-6" />
-                    </Link>
+                        {/* Search Bar in Mobile */}
+                        <div className="mt-4">
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    className="w-full py-2 pl-10 pr-4 text-sm border rounded-full focus:outline-none focus:ring "
+                                    placeholder="Search for Product"
+                                />
+                                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <CiSearch className="w-5 h-5 text-gray-500" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
